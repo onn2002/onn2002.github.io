@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, indigo, blue,green,yellow,orange,pink,skyblue,red);
+  background-size: 1500% 100%;
+  animation: myRGB 5s linear infinite;
+  height: 100vh;
+  margin: 0;
+  display:flow-root;
+  font-size:x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  align-content: center;}
+
+p.a {text-shadow: 2px 2px red;
+    margin: 20px;
+    border-style: solid;
+    border-color:crimson;}
+
+    p.b {text-shadow: 2px 2px deepskyblue;
+        margin: 20px;
+        border-style:double;
+        border-color:deepskyblue;}
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 5s infinite;
+            animation-direction: alternate-reverse;
+          }
+          
+          @keyframes mymove {
+            from {left: 0px;}
+            to {left: 90%; background-color: blue;}
+          }
+
+
+          
+    
+
+@keyframes myRGB {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+
+}
