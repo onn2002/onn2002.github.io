@@ -1,0 +1,22 @@
+table{
+            background-color: powderblue; 
+            color: white; 
+            font-family: verdana; 
+            font-size: 160%; 
+            text-align: center; 
+            width: 75%; 
+            height: 100%;
+}
+
+table tr.tr1{
+    text-align: left;
+}
+
+table td.attribute{
+    background-color: #6C7E8A;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table td.data{
+    color: black;
+}
