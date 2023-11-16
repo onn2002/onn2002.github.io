@@ -1,0 +1,620 @@
+@import url('http://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:#222;
+}
+h4{
+    font-size: 20px;
+    color:#222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px; /*to define the feature's padding*/
+}
+
+.section-m1{
+    margin: 40px 0; 
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: grey;
+    border-radius: 4px;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    transition: 0.2s;
+}
+
+body{
+    width: 100%;
+}
+
+/*Header Start*/
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 80px;
+    background: #0192FB;
+    position: sticky; /*When scrolling the page the menu will still stick on the top*/
+    top: 0;
+    left: 0;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#menu li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#menu li a:hover,
+#menu li a.highlight{
+    color: red;
+}
+
+#menu li a.highlight::after,
+#menu li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: red ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*----------------Home Page--------------------*/
+#home_page{
+    background-image:url(nike.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#home_page h4{
+    color: black;
+}
+#home_page h2{
+    color: black;
+}
+#home_page h1{
+    color:black;
+}
+#home_page p{
+    color:black;
+}
+#home_page button{
+    background-color: royalblue;
+    color: black;  /*define the font colour*/
+    border: 5;  /*define the button border*/
+    border-color: black; /*define the button border-colour*/
+    border-radius: 50% 50% 50% 50%;
+    padding: 14px 80px 14px 65px; /*define the button-size*/
+    cursor: pointer; /*when mouse move to button it shows the hand-pointer*/
+    font-weight: 700; /*font thickness*/
+    font-size: 15px;
+}
+
+#feature .feature_box{ /*customize the feature box 1*/
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.10);
+    border: 3px solid #cce7d0;
+    border-radius: 25px 25px 25px 25px;
+}
+
+#feature .feature_box:hover{ /*whenever mouse at the feature box, the box shadow will be reduce*/
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.10);
+}
+
+#feature .feature_box h6{ /*customize the feature box H6*/
+    display: inline-block; /*surround the text according to the text length*/
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;/*text colour*/
+    background-color: skyblue;
+}
+
+#feature{ /*make the box align as column style*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#feature .feature_box:nth-child(2) h6{ 
+/*customize the text box background color*/
+/*customize the text box according to the <div> tag, need to count which <div> you customizing*/
+background-color: greenyellow;
+}
+
+#feature .feature_box:nth-child(3) h6{ 
+    /*customize the text box background color*/
+    /*customize the text box according to the <div> tag, need to count which <div> you customizing*/
+    background-color: rgb(253, 244, 2);
+}
+
+#feature .feature_box:nth-child(4) h6{ 
+    /*customize the text box background color*/
+    /*customize the text box according to the <div> tag, need to count which <div> you customizing*/
+    background-color: pink;
+}
+
+#feature .feature_box:nth-child(5) h6{ 
+    /*customize the text box background color*/
+    /*customize the text box according to the <div> tag, need to count which <div> you customizing*/
+    background-color: crimson;
+}
+
+#item1{
+    text-align: center;
+}
+
+#item1 p{
+    color: black;
+}
+#item1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#item1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.10);
+    margin: 15px;
+    transition: 0.2s ease;
+}
+
+#item1 .pro:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.10) ;
+}
+
+#item1 .pro img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+#item1 .pro .description{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#item1 .pro .description span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#item1 .pro .description h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#item1 .pro .description i{
+    font-size: 12px;
+    color: rgb(243, 220, 67);
+}
+
+#item1 .pro .description h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(banner1.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: white;
+    font-size: 30px;
+}
+
+#banner h2{
+    color: rgb(17, 168, 227);
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: red;
+}
+
+#banner button{
+    background-color: grey;
+    border-radius: 15% 15% 15% 15%;
+}
+
+#banner button:hover{
+    color: white;
+    background-color: skyblue ;
+}
+
+footer{
+    display: flex; /*to display the data in 1 row only*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .column{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer p{
+    color: grey;
+}
+
+
+/*----------------------Shop--------------------*/
+
+#shop_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#shop_menu li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#shop_menu li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#shop_menu li a:hover,
+#shop_menu li a.highlight{
+    color: red;
+}
+
+#shop_menu li a.highlight::after,
+#shop_menu li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: red ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#shop_header{
+    background-color: #0192FB;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#shop_header h2{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#shop_header p{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size:xx-large;
+}
+
+#euro_item{
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+
+#euro_item .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#euro_item .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.10);
+    margin: 15px;
+    transition: 0.2s ease;
+}
+
+#euro_item .pro:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.10) ;
+}
+
+#euro_item .pro img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+#euro_item .pro .description{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#euro_item .pro .description span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#euro_item .pro .description h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#euro_item .pro .description i{
+    font-size: 12px;
+    color: rgb(243, 220, 67);
+}
+
+#euro_item .pro .description h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#euro_item p{
+    color:red;
+    font-size: 45px;
+}
+
+
+#euro_item button{
+    background-color: grey;
+    color: black;
+    border: 5; 
+    border-color: black;
+    border-radius: 70% 70% 70% 70%;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#euro_item button:hover{
+    color: white;
+    background-color: skyblue ;
+}
+
+/*----------------About--------------*/
+#about_header{
+    background-image: url(nike1.gif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#about_header h2,p{
+    color: white;
+}
+
+#aboutus img{
+    width: 50%;
+    height: auto;
+}
+
+#aboutus{
+    display: flex;
+    align-items: center;
+}
+
+#aboutus p{
+    color: black;
+}
+
+#aboutus div{
+    padding-left: 40px;
+}
+
+#euro_app{
+    text-align: center;
+}
+
+#euro_app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#euro_app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#signup{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image:url(form.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #150728;
+}
+
+#signup h4{
+    color:white
+}
+
+#signup p{
+    color:#c0a6e4
+}
+
+#signup p span{
+    color: #27e2ff;
+}
+
+#signup .form{
+    display:flex;
+    width: 40%;
+}
+
+#signup input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#signup button{
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*----------------------------Limited Edition-------------------------*/
+#title{
+    background-color: #0192FB;
+    text-align: center;
+}
+
+#le_items{
+    display: flex;
+    align-items: center;
+}
+
+#le_items p{
+    color: #000000;
+}
+
+#le_items img{
+    width: 40%;
+    height: auto;
+}
+
+#le_items div{
+    padding-left: 40px;
+}
+
+#le_items1{
+    display: flex;
+    align-items: center;
+}
+
+#le_items1 h2{
+    color: red;
+}
+
+#le_items1 p{
+    color: #000000;
+}
+
+#le_items1 img{
+    width: 40%;
+    height: auto;
+}
+
+#le_items1 div{
+    padding-right: 40px;
+}
+
+#le_items2{
+    display: flex;
+    align-items: center;
+}
+
+#le_items2 h2{
+    color: blue;
+}
+
+#le_items2 p{
+    color: #000000;
+}
+
+#le_items2 img{
+    width: 40%;
+    height: auto;
+}
+
+#le_items2 div{
+    padding-left: 40px;
+}
