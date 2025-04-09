@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>J.O.P.S - We Secure the Area</title>
+  <style>
+    /* Apply a full-screen background image */
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("crescendo.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    
+    /* Transparent banner at the top */
+    .banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 1);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      z-index: 1000;
+    }
+    
+    /* Logo image styling */
+    .logo-image {
+      vertical-align: middle;
+      width: 50px; /* Adjust size as needed */
+      margin-right: 10px;
+    }
+    
+    /* Navigation menu styling */
+    .banner nav {
+      margin-top: 10px;
+    }
+    .banner nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      position: relative;
+    }
+    .banner nav a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Tooltip styling for Contacts */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      max-width: 240px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px;
+      position: absolute;
+      z-index: 1001;
+      bottom: 125%; /* Position the tooltip above the link */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      font-size: 0.9em;
+      line-height: 1.2;
+    }
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    /* Container for content with a creative transparent background */
+    .container {
+      background: rgba(255, 255, 255, 0.8);
+      margin: 100px auto;
+      padding: 30px;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in;
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    /* Keyframes for fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    /* Text section */
+    .text-section {
+      flex: 1;
+      min-width: 300px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      display: inline;
+      vertical-align: middle;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    
+    /* Video section */
+    .video-section {
+      flex: 1;
+      min-width: 300px;
+    }
+    video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Navigation arrow buttons styling */
+    .arrow-button {
+      background: #ff1616;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.5em;
+      transition: background 0.3s ease;
+    }
+    .arrow-button:hover {
+      background: #555;
+    }
+    
+    /* Fixed bottom banner for arrow navigation */
+    .nav-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <!-- Clickable logo beside the title -->
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="logo-image">
+    </a>
+    <h1>J.O Parking System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="introduction.html">Introduction</a>
+      <a href="demo.html">Demo</a>
+      <a href="appreciation.html">Appreciation</a>
+      <a href="contacts.html" class="tooltip">Contacts
+        <span class="tooltiptext">
+          Email: andylau02123@gmail.com<br><br>
+          Phone: +6018 666 2330
+        </span>
+      </a>
+    </nav>
+  </div>
+  <br><br><br>
+  <div class="container">
+    <div class="text-section">
+      <h1>Demo</h1>
+      <p>
+        1. Vehicle arrives at the parking entrance<br><br>
+        2. Users screenshots through the ESP32 Camera shows/take photo of the vehicle's number plate<br><br>
+        3. Named the picture that user's took<br><br>
+        4. Type the picture's name inside the code block<br><br>
+        5. Save it<br><br>
+        6. Open CMD<br><br>
+        7. Navigate the main.py location<br><br>
+        8. Type "python main.py"<br><br>
+        9. Results will straight send to P10 LED Display Board for displaying the vehicle's number plate
+      </p>
+    </div>
+    <div class="video-section">
+      <video controls>
+        <source src="demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
