@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>J.O.P.S - We Secure the Area</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    /* Apply a full-screen background image */
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("crescendo.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    /* Transparent banner at the top */
+    .banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 1);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      z-index: 1000;
+    }
+    /* Container for logo and title to display side-by-side */
+    .logo-title-container {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Logo image styling */
+    .logo-image {
+      width: 50px; /* Adjust size as needed */
+      height: auto;
+      margin-right: 10px;
+    }
+    /* Navigation menu styling */
+    .banner nav {
+      margin-top: 10px;
+    }
+    .banner nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      position: relative;
+    }
+    .banner nav a:hover {
+      text-decoration: underline;
+    }
+    /* Tooltip styling for Contacts */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      max-width: 240px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px;
+      position: absolute;
+      z-index: 1001;
+      bottom: 125%; /* Position the tooltip above the link */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      font-size: 0.9em;
+      line-height: 1.2;
+    }
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    /* Container for content with a creative transparent background */
+    .container {
+      background: rgba(255, 255, 255, 0.8);
+      margin: 100px auto;
+      padding: 30px;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    /* Keyframes for fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    /* Styling for headings and paragraphs */
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    /* Navigation arrow buttons styling */
+    .arrow-button {
+      background: #ff1616;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.5em;
+      transition: background 0.3s ease;
+    }
+    .arrow-button:hover {
+      background: #555;
+    }
+    /* Fixed bottom banner for arrow navigation */
+    .nav-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <!-- Wrap the logo and title in a flex container -->
+    <div class="logo-title-container">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo" class="logo-image">
+      </a>
+      <h1>J.O Parking System</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="introduction.html">Introduction</a>
+      <a href="demo.html">Demo</a>
+      <a href="appreciation.html">Appreciation</a>
+      <a href="contacts.html" class="tooltip">Contacts
+        <span class="tooltiptext">
+          Email: andylau02123@gmail.com<br><br>
+          Phone: +6018 666 2330
+        </span>
+      </a>
+    </nav>
+  </div>
+  <br><br><br><br>
+  <div class="container">
+    <h1>Appreciation</h1>
+    <p>
+      First and foremost, I would like to extend my sincere appreciation to Crescendo International College for providing me with a conducive learning environment throughout my academic journey. The college has not only equipped me with the essential theoretical knowledge but has also offered valuable practical experiences that have greatly enriched my understanding of real-world applications in the field of technology. The facilities, guidance, and support from the college administration and academic staff have played a significant role in helping me complete this Final Year Project successfully.
+      <br><br>
+      I am especially grateful to Mr. Simon, my supervisor and mentor, for his unwavering support, patience, and guidance throughout the entire duration of this project. His deep knowledge, approachable nature, and consistent encouragement have been a driving force behind my progress. Under his mentorship, I learned how to tackle complex problems, break them down into manageable parts, and find effective solutions through logical thinking and hands-on experimentation. He has helped me improve not only my programming and technical skills but also my ability to plan, manage time, and communicate ideas clearly.
+      <br><br>
+      Mr. Simon’s emphasis on independent learning, innovation, and perseverance has had a lasting impact on my mindset. Through this project, I gained experience in working with microcontrollers, AI-based object detection, server-client communication, and hardware integration—skills I will carry with me into my professional career. I am truly grateful for the opportunity to learn from him and for his belief in my capabilities, even when I faced challenges and setbacks along the way.
+      <br><br>
+      Lastly, I would also like to thank all my lecturers, classmates, and friends who offered their help, encouragement, and constructive feedback during this journey. Their support has been a source of motivation and inspiration throughout the process.
+    </p>
+  </div>
+</body>
+</html>
